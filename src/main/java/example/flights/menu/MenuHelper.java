@@ -1,16 +1,18 @@
 package example.flights.menu;
 
-import org.example.Tickets.TicketOperatorService;
-import org.example.flights.operators.AdministratorFlightOperator;
-import org.example.flights.operators.AssistanceFlightOperator;
-import org.example.flights.operators.UserFlightOperator;
-import org.example.messages.Message;
-import org.example.messages.Messages;
-import org.example.messages.ThreadsController;
-import org.example.user.Quest;
-import org.example.user.Role;
-import org.example.user.User;
-import org.example.user.UserController;
+
+
+import example.flights.operators.AdministratorFlightOperator;
+import example.flights.operators.AssistanceFlightOperator;
+import example.flights.operators.UserFlightOperator;
+import example.messages.Message;
+import example.messages.Messages;
+import example.messages.ThreadsController;
+import example.tickets.TicketOperatorService;
+import example.user.Quest;
+import example.user.Role;
+import example.user.User;
+import example.user.UserController;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -258,16 +260,6 @@ public class MenuHelper {
 
     private static void displayReclamations() {
         System.out.println("3. RECLAMATIONS");
-    }
-
-    public static void caseReclamationsForAssociates() {
-        displayReclamations();
-        //TODO Handle Managing Reclamations
-    }
-
-    public static void caseReclamationsForUsers() {
-        displayReclamations();
-        //TODO Handle Managing Reclamations
     }
 
     public static User caseChangePassword(User user) {
